@@ -27,6 +27,6 @@
 
 
 ;; Mathematical definitions for function h: h(n) = 2^2^... (n times)
-;; or using tetration(hyper-4) h(n) = ^{n}2
+;; or using tetration(hyper-4) h(n) = 2^^{n}
 (define (h n)
   (A 2 n))
