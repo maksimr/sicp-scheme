@@ -1,4 +1,4 @@
-;; Ackermann's function
+;; The following procedure computes a mathematical function called Ackermann's function.
 (define (A x y)
   (cond
    ((= y 0) 0)
@@ -9,6 +9,11 @@
             (A x
                (- y 1))))))
 
+
+
+;; Exercise 1.10.
+;; Give concise mathematical definitions for the functions computed by the procedures
+;; f, g, and h for positive integer values of n. For example, (k n) computes 5n2.
 
 
 ;; Mathematical definitions for function f: f(n) = 2n
@@ -23,5 +28,5 @@
 
 ;; Mathematical definitions for function h: h(n) = 2^2^... (n times)
 ;; or using tetration(hyper-4) h(n) = ^{n}2
-(define (g n)
+(define (h n)
   (A 2 n))
